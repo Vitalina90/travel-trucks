@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  background-color: var(--inputs-bg);
+  border-bottom: 1px solid var(--border-color);
+  /* padding: 28px 0; */
+  /* padding: 24px 64px; */
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  padding: 0 452px;
+}
+
+.navLink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color);
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--grey-green);
+}
