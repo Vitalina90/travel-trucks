@@ -1,14 +1,52 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Основна палітра з UI Kit */
+  --main-color: #101828; /* Темний текст */
+  --main-bg: #ffffff;
+  --text-color: #475467; /* Другорядний сірий текст */
+
+  --inputs-bg: #f7f7f7; /* Світлий фон інпутів / карток */
+  /* --button-green: #475467; Базовий колір кнопка/акцент (або темно-зелений з макета) */
+  --button-hover: #344054; /* Hover стан */
+  --grey-green: #829b91;
+  --green-hover: #6d7b75;
+  --badges-bg: #f2f4f7; /* Фон бейджів/тегів */
+  --error-red: #d92d20; /* Колір помилки для інпутів */
+  --error-bg: #fef3f2; /* Фон помилкового інпута */
+  --border-color: #f2f4f7;
+}
+:root {
+  /* --text: #475467; */
+  /* --white: #fff; */
+  /* --inputs: #f7f7f7; */
+  /* --badges: #f2f4f7; */
+  --gray: #6c717b;
+  --gray-light: #dadde1;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --rating: #ffc531;
+
+  --olive: #f0f1f1;
+  /* --green-hover: #6d7b75; */
 }
 
-@media (prefers-color-scheme: dark) {
+body {
+  color: var(--main-color);
+  background-color: var(--main-bg);
+  font-family: var(--font-inter), sans-serif; /* або стандартний системний */
+  margin: 0;
+  padding: 0;
+}
+
+/* Якщо для окремих блоків чи заголовків потрібен Manrope: */
+.manropeFont {
+  font-family: var(--font-manrope), sans-serif;
+}
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html {
   height: 100%;
@@ -20,7 +58,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -29,7 +67,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -40,10 +78,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
